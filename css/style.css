@@ -8,9 +8,139 @@
 body
 {
     font-family: "Work Sans",sans-serif;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.header
+{
+    padding: 5px 20px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.container
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.header .container
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    /* background-color: rgb(239, 239, 239); */
+    /* width: 100%; */
+    border-bottom:3px black solid;
+}
+
+.header .logo
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+}
+.text-logo{
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 34, 255, 0.8);
+
+}
+
+.header .container .links a
+{
+    display:flex;
+    float: left;    
+    margin: 0px 25px;
+    font-size:18px;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.15s ease;
+
+
+}
+
+.title{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
 }
 
 
+.header .container .links a:hover
+{
+    color: blue;
+    transform: scale(1.2);
+    animation: glow 1s infinite alternate; 
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Initial shadow style */
+    }
+    to {
+      text-shadow: 0 0 20px rgba(0, 34, 255, 0.8); /* Final shadow style */
+    }
+  }
+
+
+.branding .container
+{
+    margin-top: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+}
+.branding span
+{
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px black solid;
+}
+.branding .container .collaborations
+{
+    position: absolute;
+    top: 20px;
+    margin: auto;
+
+}
+.branding .container .brands 
+{
+    position: absolute;
+    top: 50px;
+    margin:  50px auto;
+    background-color: white;
+    display:flex;
+} 
+
+.container .brands img
+{
+    display: inline-block;
+    justify-content: space-between;
+    float: left;
+    margin: 5px 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: 0.5px rgba(0, 0, 0, 0.33) solid;
+    transition: transform 0.1s ease-in-out;
+}
+
+.container .brands img:hover
+{
+    transform: scale(1.1);
+
+    /* box-shadow: 0 0 20px rgba(0, 34, 255, 0.8); Glow effect on hover */
+}
+
+
+
+  
 
 /* small */
 @media (min-width: 768px){
@@ -27,6 +157,6 @@ body
 /* large */
 @media (min-width: 768px){
     .container { 
-        width:1170;
+        width:1170px;
     }
 }
