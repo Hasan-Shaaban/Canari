@@ -34,7 +34,7 @@ body
     margin: auto;
     /* background-color: rgb(239, 239, 239); */
     /* width: 100%; */
-    border-bottom:3px black solid;
+    border-bottom:2px black solid;
 }
 
 .header .logo
@@ -64,7 +64,7 @@ body
 }
 
 .title{
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.713);
     font-size: 18px;
 }
 
@@ -85,6 +85,9 @@ body
     }
   }
 
+.branding{
+}
+
 
 .branding .container
 {
@@ -92,15 +95,10 @@ body
     position: relative;
     align-items: center;
     justify-content: center;
+    /* display: block; */
+    height: 300px;
+    border-bottom: 2px solid black;
     
-}
-.branding span
-{
-    position: absolute;
-    top: 300px;
-    left: 0;
-    width: 100%;
-    border-bottom: 3px black solid;
 }
 .branding .container .collaborations
 {
@@ -115,27 +113,29 @@ body
     top: 50px;
     margin:  50px auto;
     background-color: white;
-    display:flex;
+    display:inline-block;
+
 } 
 
 .container .brands img
 {
     display: inline-block;
     justify-content: space-between;
-    float: left;
+    /* float: left; */
     margin: 5px 50px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 150px;
     border: 0.5px rgba(0, 0, 0, 0.33) solid;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out, transform 0.3s ease;
 }
 
 .container .brands img:hover
 {
-    transform: scale(1.1);
+    transform: scale(1.5);
 
-    /* box-shadow: 0 0 20px rgba(0, 34, 255, 0.8); Glow effect on hover */
+    box-shadow: 0 0 30px rgba(0, 34, 255, 0.3); /*Glow effect on hover */
+    /* transform: rotate(-20deg); */
 }
 
 
